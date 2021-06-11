@@ -1,0 +1,4 @@
+line1:fuck:you
+line2:fuck:you
+line3:fuck:you
+line4:fuck:you

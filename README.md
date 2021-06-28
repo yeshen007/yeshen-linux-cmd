@@ -47,8 +47,14 @@ awk '$1>2 && $2=="li" {print $1}' awk.txt //输出第1列大于2且第2列为li�
 
 /* 内置变量 */
 awk 'BEGIN{FS=":"; OFS="-"} {print $1,$2}' awk.txt 
+awk 'BEGIN{FIELDWIDTHS="5 5 4"} {print $1,$2,$3}' awk.txt  
+awk 'BEGIN{FS="\n"; RS=""} {print $1,$2}' awk.txt
+awk 'BEGIN{OFS="--"} {print $1,$2}' awk.txt
 
 /* 正则表达式 */
+echo '1ab2bc3cd4de5' | awk 'BEGIN{RS="[a-z]+"} {print $1,RS,RT}'
+awk '$2 ~ /li/ {print $1,$2}' test.awk //输出第2列包含li的行的第1和第2元素
+awk '$2 ！~ /li/ {print $1,$2}' test.awk //输出第2列不包含li的行的第1和第2元素
 
 ```
 

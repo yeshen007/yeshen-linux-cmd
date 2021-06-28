@@ -1,6 +1,5 @@
-> author -- leaf god
-> 
-> data -- 2021.6.26
+> author -- leaf god  
+> data -- 2021.6.26  
 
 ## This project is just for recording the common used method for common used linux comands.
 

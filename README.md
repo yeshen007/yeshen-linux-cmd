@@ -57,3 +57,21 @@ awk '$2 ！~ /li/ {print $1,$2}' test.awk //输出第2列不包含li的行的第
 
 ```
 
+### diff and patch
+
+```c
+/* 两个单独文件生成补丁 */
+diff -u a.txt a_fix.txt > a-patch 
+
+/* 两个目录生成补丁 */
+diff -urN a/ a_fix/ > a-patch
+
+/* 正向打补丁(a->a_fix) */
+patch -p0 < a-patch   //补丁在a同级目录，patch命令也在同级目录
+patch -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
+
+/* 反向打补丁(a_fix->a) */
+patch -R -p0 < a-patch  //补丁在a同级目录，patch命令也在同级目录
+patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
+
+```

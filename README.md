@@ -86,3 +86,15 @@ patch -R -p0 < a-patch  //补丁在a同级目录，patch命令也在同级目录
 patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ```
+
+### 网络配置文件
+
+```c
+/etc/resolv.conf
+/etc/dhcp/dhcpd.conf
+/etc/dhcp/dhclient.conf
+/etc/dhcpcd.conf
+/etc/network/interfaces
+/etc/hosts
+
+```

@@ -10,6 +10,7 @@
 echo -e "1 2 3\n4 5 6" > log.txt
 
 /* 配置静态或者dhcp动态ip */
+// /etc/network/interfaces
 auto eth0
 
 iface eth0 inet static

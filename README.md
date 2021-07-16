@@ -27,6 +27,9 @@ gateway 192.168.8.1
 /etc/dhcpcd.conf
 /etc/network/interfaces
 /etc/hosts
+
+/* 重定向 */
+
 ```
 
 ### awk
@@ -107,7 +110,19 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ### wc
 
-### 
+### head
+
+### tail
+
+### less
+
+### grep 
+
+### tee
+
+### make
+
+### git
 
 ### mkfs
 

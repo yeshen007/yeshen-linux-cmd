@@ -48,6 +48,17 @@ $HOME/.profile  //和.bashrc实际效果差不多
 
 ```c
 
+apt update
+apt upgrade [package-name]
+apt install packeage-name
+apt remove package-name
+apt purge package-name
+apt autoremove
+apt list
+apt list --installed
+apt list --upgradeable
+apt show package-name
+
 ```
 
 ### awk

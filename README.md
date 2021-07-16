@@ -19,6 +19,14 @@ netmask 255.255.255.0
 gateway 192.168.8.1
 
 #iface eth0 inet dhcp //dhcp
+
+/* 网络配置文件 */
+/etc/resolv.conf
+/etc/dhcp/dhcpd.conf
+/etc/dhcp/dhclient.conf
+/etc/dhcpcd.conf
+/etc/network/interfaces
+/etc/hosts
 ```
 
 ### awk
@@ -87,14 +95,3 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ```
 
-### 网络配置文件
-
-```c
-/etc/resolv.conf
-/etc/dhcp/dhcpd.conf
-/etc/dhcp/dhclient.conf
-/etc/dhcpcd.conf
-/etc/network/interfaces
-/etc/hosts
-
-```

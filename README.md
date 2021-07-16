@@ -95,3 +95,15 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ```
 
+### dd
+
+### fdisk
+
+### mkfs
+
+### mount
+
+### losetup
+
+
+

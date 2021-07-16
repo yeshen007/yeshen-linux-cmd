@@ -30,10 +30,17 @@ gateway 192.168.8.1
 
 /* 权限文件 */
 /etc/passwd
-/etc/sh
-...
+/etc/shadow
+/etc/group
+/etc/sudoers
+
 
 /* 启动环境变量设置文件 */
+/etc/profile    //设定的变量能用于所有用户    
+/etc/profile.d
+$HOME/.bashrc   
+$HOME/.profile  //和.bashrc实际效果差不多
+
 
 /* 重定向 */
 

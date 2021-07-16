@@ -3,7 +3,7 @@
 
 ## This project is just for recording the common used method for common used linux comands.
 
-### misc
+### MISC
 
 ```c
 /* -e识别转义字符 */
@@ -95,9 +95,19 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ```
 
+### cut
+
 ### dd
 
 ### fdisk
+
+### sed
+
+### sort
+
+### wc
+
+### 
 
 ### mkfs
 

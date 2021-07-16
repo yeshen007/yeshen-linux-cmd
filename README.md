@@ -10,14 +10,12 @@
 echo -e "1 2 3\n4 5 6" > log.txt
 
 /* 配置静态或者dhcp动态ip */
-// /etc/network/interfaces
+/etc/network/interfaces
 auto eth0
-
 iface eth0 inet static
 address 192.168.8.123
 netmask 255.255.255.0
 gateway 192.168.8.1
-
 #iface eth0 inet dhcp //dhcp
 
 /* 网络配置文件 */

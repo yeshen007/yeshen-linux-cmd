@@ -29,6 +29,10 @@ gateway 192.168.8.1
 /etc/hosts
 
 /* 权限文件 */
+/etc/passwd
+...
+
+/* 启动环境变量设置文件 */
 
 /* 重定向 */
 
@@ -81,6 +85,24 @@ awk '$2 ！~ /li/ {print $1,$2}' test.awk //输出第2列不包含li的行的第
 
 ```
 
+### cut
+
+```c
+
+```
+
+### dd
+
+```c
+
+```
+
+### df
+
+```c
+
+```
+
 ### diff and patch
 
 ```c
@@ -100,13 +122,17 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ```
 
-### cut
+### dtc
 
-### dd
+```c
 
-### df
+```
 
 ### du
+
+```c
+
+```
 
 ### fdisk
 
@@ -130,6 +156,10 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ### ps
 
+### ftrace
+
+### perf
+
 ### objdump
 
 ### hexdump
@@ -151,6 +181,8 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 ### mount
 
 ### losetup
+
+### parted
 
 
 

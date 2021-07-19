@@ -231,15 +231,18 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 `查看文件格式，如elf，acill等`
 
+### head/tail
+
+```c
+head -n 5 file
+head -c 5 file //显示文件file开头5个字节
+```
+
 ### sed
 
 ### sort
 
 ### wc
-
-### head
-
-### tail
 
 ### tar
 

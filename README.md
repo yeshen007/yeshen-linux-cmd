@@ -51,6 +51,23 @@ exec
 
 ```
 
+### adduser
+
+```c
+useradd user
+useradd -g group user
+useradd -d /home/user user
+
+```
+
+### addgroup
+
+```c
+//创建一个新的组，组id为id
+addgroup -g id group
+
+```
+
 ### apt
 
 ```c
@@ -145,6 +162,26 @@ deluser <user> <group>
 /* 删除用户的同时删除目录等 */
 deluser --remove-all-files <user>
 deluser --remove-home <user>
+
+```
+
+### delgroup
+
+```c
+delgroup group //先删除组中的用户
+```
+
+### chown
+
+```c
+chown newuser file
+chown newuser.newgroup file
+
+```
+### chgrp
+
+```c
+chgrp newgroup file
 
 ```
 

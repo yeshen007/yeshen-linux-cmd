@@ -133,6 +133,21 @@ awk '$2 ！~ /li/ {print $1,$2}' test.awk //输出第2列不包含li的行的第
 
 ```
 
+### deluser
+
+```c
+/* 删除用户 */
+deluser <user>
+
+/* 从组中删除用户 */
+deluser <user> <group>
+ 
+/* 删除用户的同时删除目录等 */
+deluser --remove-all-files <user>
+deluser --remove-home <user>
+
+```
+
 ### df
 
 ```c

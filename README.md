@@ -135,7 +135,8 @@ awk '$2 ！~ /li/ {print $1,$2}' test.awk //输出第2列不包含li的行的第
 ### cat
 
 ```c
-
+cat -n file
+cat -b file
 ```
 
 ### chown

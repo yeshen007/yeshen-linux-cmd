@@ -156,7 +156,9 @@ chgrp newgroup file
 ### cut
 
 ```c
-
+cut -b/-c 3 file
+cut -b/-c 2-4,8 file
+cut -d: -f 3 file
 ```
 
 ### dd

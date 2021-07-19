@@ -138,6 +138,20 @@ awk '$2 ！~ /li/ {print $1,$2}' test.awk //输出第2列不包含li的行的第
 
 ```
 
+### chown
+
+```c
+chown newuser file
+chown newuser.newgroup file
+
+```
+### chgrp
+
+```c
+chgrp newgroup file
+
+```
+
 ### cut
 
 ```c
@@ -169,20 +183,6 @@ deluser --remove-home <user>
 
 ```c
 delgroup group //先删除组中的用户
-```
-
-### chown
-
-```c
-chown newuser file
-chown newuser.newgroup file
-
-```
-### chgrp
-
-```c
-chgrp newgroup file
-
 ```
 
 ### df

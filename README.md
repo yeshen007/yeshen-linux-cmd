@@ -135,7 +135,8 @@ awk '$2 ！~ /li/ {print $1,$2}' test.awk //输出第2列不包含li的行的第
 ### cat
 
 ```c
-
+cat -n file
+cat -b file
 ```
 
 ### chown
@@ -155,7 +156,9 @@ chgrp newgroup file
 ### cut
 
 ```c
-
+cut -b/-c 3 file
+cut -b/-c 2-4,8 file
+cut -d: -f 3 file
 ```
 
 ### dd
@@ -228,15 +231,18 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 `查看文件格式，如elf，acill等`
 
+### head/tail
+
+```c
+head -n 5 file
+head -c 5 file //显示文件file开头5个字节
+```
+
 ### sed
 
 ### sort
 
 ### wc
-
-### head
-
-### tail
 
 ### tar
 

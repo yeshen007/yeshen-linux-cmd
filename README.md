@@ -231,6 +231,8 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 `查看文件格式，如elf，acill等`
 
+### ftrace
+
 ### gcc
 
 ```c
@@ -248,6 +250,10 @@ gcc -o myproc main.c test.c
 
 ```
 
+### grep 
+
+### git
+
 ### head/tail
 
 ```c
@@ -255,25 +261,22 @@ head -n 5 file
 head -c 5 file //显示文件file开头5个字节
 ```
 
-### sed
+### hexdump
 
-### sort
-
-### wc
-
-### tar
-
-### more
+### losetup
 
 ### less
 
-### top
+### more
 
-### ps
+### make
 
-### ftrace
 
-### perf
+### mkfs
+
+### mount
+
+### nm
 
 ### objdump
 
@@ -288,29 +291,29 @@ head -c 5 file //显示文件file开头5个字节
  */
 od -Ax -t x1 -N 52 file
 od -AX -t x1 -j 500 -N 40 file
+
 ```
 
-### hexdump
+### ps
 
-### readelf
-
-### nm
-
-### grep 
-
-### tee
-
-### make
-
-### git
-
-### mkfs
-
-### mount
-
-### losetup
+### perf
 
 ### parted
 
+### readelf
+
+### sed
+
+### sort
+
+
+### tar
+
+### top
+
+
+### tee
+
+### wc
 
 

@@ -1,9 +1,9 @@
 > author -- leaf god  
 > data -- 2021.6.26  
 
-## This project is just for recording the common used method for common used linux comands.
+# This project is just for recording the common used method for common used linux comands.
 
-### MISC
+## MISC
 
 ```c
 /* -e识别转义字符 */
@@ -50,6 +50,8 @@ cmd >&2 //标准输出重定向到文件描述符2即标准输出上
 exec 
 
 ```
+
+## A
 
 ### adduser
 
@@ -132,6 +134,8 @@ awk '$2 ！~ /li/ {print $1,$2}' test.awk //输出第2列不包含li的行的第
 
 ```
 
+## C
+
 ### cat
 
 ```c
@@ -160,6 +164,8 @@ cut -b/-c 3 file
 cut -b/-c 2-4,8 file
 cut -d: -f 3 file
 ```
+
+## D
 
 ### dd
 
@@ -225,6 +231,8 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ```
 
+## F
+
 ### fdisk
 
 ### file
@@ -232,6 +240,8 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 `查看文件格式，如elf，acill等`
 
 ### ftrace
+
+## G
 
 ### gcc
 
@@ -254,6 +264,8 @@ gcc -o myproc main.c test.c
 
 ### git
 
+## H
+
 ### head/tail
 
 ```c
@@ -263,9 +275,13 @@ head -c 5 file //显示文件file开头5个字节
 
 ### hexdump
 
+## L
+
 ### losetup
 
 ### less
+
+## M
 
 ### more
 
@@ -276,7 +292,11 @@ head -c 5 file //显示文件file开头5个字节
 
 ### mount
 
+## N
+
 ### nm
+
+## O
 
 ### objdump
 
@@ -294,25 +314,33 @@ od -AX -t x1 -j 500 -N 40 file
 
 ```
 
+## P
+
 ### ps
 
 ### perf
 
 ### parted
 
+## R
+
 ### readelf
+
+## S
 
 ### sed
 
 ### sort
 
+## T
 
 ### tar
 
 ### top
 
-
 ### tee
+
+## W
 
 ### wc
 

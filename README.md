@@ -254,9 +254,14 @@ gcc -S HelloWorld.i -o HelloWorld.s
 gcc -c HelloWorld.s -o HelloWorld.o 或者 as hello.s -o hello.o
 /* 链接 */
 gcc -static -o myproc main.o test.o 或者 ld -static -o myproc main.o test.o
+/* 默认动态链接，如果没有动态库则静态链接 */
 gcc -o myproc main.o test.o 或者 ld -o myproc main.o test.o
 /* 一步处理预处理，编译，汇编，链接 */
 gcc -o myproc main.c test.c
+/* 生成静态库 */
+ar rcs -o mylib.a proc1.o proc2.o
+/* 生成动态库 */
+gcc -shared -fPIC -o mylib.so proc1.o proc2.o
 
 ```
 

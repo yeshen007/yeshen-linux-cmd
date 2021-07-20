@@ -231,6 +231,23 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 `查看文件格式，如elf，acill等`
 
+### gcc
+
+```c
+/* 预处理 */
+gcc -E HelloWorld.c -o HelloWorld.i
+/* 编译 */
+gcc -S HelloWorld.i -o HelloWorld.s
+/* 汇编 */
+gcc -c HelloWorld.s -o HelloWorld.o 或者 as hello.s -o hello.o
+/* 链接 */
+gcc -static -o myproc main.o test.o 或者 ld -static -o myproc main.o test.o
+gcc -o myproc main.o test.o 或者 ld -o myproc main.o test.o
+/* 一步处理预处理，编译，汇编，链接 */
+gcc -o myproc main.c test.c
+
+```
+
 ### head/tail
 
 ```c

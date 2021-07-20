@@ -326,6 +326,20 @@ od -AX -t x1 -j 500 -N 40 file
 
 ### readelf
 
+```c
+/* 文件头 */
+readelf -h elffile
+/* 程序头表/段头表 */
+readelf -l elffile
+/* 节头表 */
+readelf -S elffile
+/* 符号表 */
+readelf -s elffile
+/* 重定位条目 */
+readelf -r elffile
+
+```
+
 ## S
 
 ### sed

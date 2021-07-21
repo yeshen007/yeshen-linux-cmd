@@ -3,6 +3,7 @@
 
 # This project is just for recording the common used method for common used linux comands.
 
+
 ## MISC
 
 ```c
@@ -60,6 +61,7 @@ exec
 1.pop the top element of stack to pc
 
 ```
+
 
 ## A
 
@@ -144,6 +146,7 @@ awk '$2 ！~ /li/ {print $1,$2}' test.awk //输出第2列不包含li的行的第
 
 ```
 
+
 ## C
 
 ### cat
@@ -176,6 +179,7 @@ cut -d: -f 3 file
 ```
 
 ## D
+
 
 ### dd
 
@@ -241,6 +245,7 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ```
 
+
 ## F
 
 ### fdisk
@@ -250,6 +255,7 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 `查看文件格式，如elf，acill等`
 
 ### ftrace
+
 
 ## G
 
@@ -277,7 +283,6 @@ gcc -shared -fPIC -o mylib.so proc1.o proc2.o
 
 ### grep 
 
-### git
 
 ## H
 
@@ -290,30 +295,37 @@ head -c 5 file //显示文件file开头5个字节
 
 ### hexdump
 
+
 ## L
+
+### ldd
 
 ### losetup
 
 ### less
 
+### ltrace
+
+
 ## M
 
 ### more
-
-### make
-
 
 ### mkfs
 
 ### mount
 
+
 ## N
 
 ### nm
 
+
 ## O
 
 ### objdump
+
+### objcopy
 
 ### od
 
@@ -329,6 +341,7 @@ od -AX -t x1 -j 500 -N 40 file
 
 ```
 
+
 ## P
 
 ### ps
@@ -336,6 +349,7 @@ od -AX -t x1 -j 500 -N 40 file
 ### perf
 
 ### parted
+
 
 ## R
 
@@ -355,11 +369,15 @@ readelf -r elffile
 
 ```
 
+
 ## S
 
 ### sed
 
 ### sort
+
+### strace
+
 
 ## T
 
@@ -368,6 +386,7 @@ readelf -r elffile
 ### top
 
 ### tee
+
 
 ## W
 

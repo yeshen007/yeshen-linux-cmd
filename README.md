@@ -49,6 +49,16 @@ cmd >&2 //标准输出重定向到文件描述符2即标准输出上
 # 永久重定向
 exec 
 
+/* x86汇编 */
+# call
+1.push addr of next instruction
+2.make the pc point to the addr of the function being called
+# leave
+1.mov ebp esp
+2.pop ebp
+# ret
+1.pop the top element of stack to pc
+
 ```
 
 ## A

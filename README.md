@@ -267,6 +267,8 @@ gcc -shared -fPIC -o mylib.so proc1.o proc2.o
 
 ### grep 
 
+### gzip/gunzip
+
 
 ## H
 

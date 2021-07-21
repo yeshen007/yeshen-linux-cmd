@@ -178,14 +178,8 @@ cut -b/-c 2-4,8 file
 cut -d: -f 3 file
 ```
 
+
 ## D
-
-
-### dd
-
-```c
-
-```
 
 ### deluser
 
@@ -206,12 +200,6 @@ deluser --remove-home <user>
 
 ```c
 delgroup group //先删除组中的用户
-```
-
-### df
-
-```c
-
 ```
 
 ### diff and patch
@@ -235,15 +223,13 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 ### dtc
 
-```c
-
-```
-
 ### du
 
-```c
+### df
 
-```
+### docker
+
+### dd
 
 
 ## F
@@ -316,6 +302,8 @@ head -c 5 file //显示文件file开头5个字节
 
 ## N
 
+### nasm
+
 ### nm
 
 
@@ -345,6 +333,11 @@ od -AX -t x1 -j 500 -N 40 file
 ### ps
 
 ### parted
+
+
+## Q
+
+### qemu
 
 
 ## R
@@ -387,5 +380,4 @@ readelf -r elffile
 ## W
 
 ### wc
-
 

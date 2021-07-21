@@ -254,8 +254,6 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 
 `查看文件格式，如elf，acill等`
 
-### ftrace
-
 
 ## G
 
@@ -345,8 +343,6 @@ od -AX -t x1 -j 500 -N 40 file
 ## P
 
 ### ps
-
-### perf
 
 ### parted
 

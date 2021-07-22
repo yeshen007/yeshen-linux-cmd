@@ -54,11 +54,23 @@ exec
 # call
 1.push addr of next instruction
 2.make the pc point to the addr of the function being called
+
 # leave
 1.mov ebp esp
 2.pop ebp
+
 # ret
 1.pop the top element of stack to pc
+
+# label
+label
+...
+
+mov eax, label    //将label处的地址读到eax
+mov eax, [label]  //将label处的内容读到eax
+
+mov $label, %eax  //将label处的地址读到eax
+mov label, %eax   //将label处的内容读到eax
 
 ```
 

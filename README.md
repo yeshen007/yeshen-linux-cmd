@@ -291,7 +291,11 @@ head -n 5 file
 head -c 5 file //显示文件file开头5个字节
 ```
 
-### hexdump
+### hd/hexdump
+
+```c
+hexdump file
+```
 
 
 ## L
@@ -317,6 +321,10 @@ head -c 5 file //显示文件file开头5个字节
 ## N
 
 ### nasm
+
+```c
+nasm -f bin/elf test.asm -o test
+```
 
 ### nm
 

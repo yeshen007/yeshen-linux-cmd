@@ -287,6 +287,8 @@ gcc -o myproc main.c test.c
 ar rcs -o mylib.a proc1.o proc2.o
 /* 生成动态库 */
 gcc -shared -fPIC -o mylib.so proc1.o proc2.o
+/* 生成32位的程序 */
+gcc -m32 ...
 
 ```
 

@@ -63,12 +63,10 @@ exec
 1.pop the top element of stack to pc
 
 # label
-label
+label:
 ...
-
 mov eax, label    //将label处的地址读到eax
 mov eax, [label]  //将label处的内容读到eax
-
 mov $label, %eax  //将label处的地址读到eax
 mov label, %eax   //将label处的内容读到eax
 

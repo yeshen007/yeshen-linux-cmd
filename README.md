@@ -76,6 +76,16 @@ mov label, %eax   //将label处的内容读到eax
 WORD PTR [ax] //ax的值作为地址存放的一个字
 WORD PTR label //label处存放的一个字
 WORD PTR label + 2  //label接下来的第二个字节地址处存放的一个字
+mov eax, dword ptr [ebx] //intel
+movl (%ebx), %eax //at&t
+
+# addressing
+mov eax, 8 //intel格式的十进制立即数寻址
+mov $8, %eax //at&t格式的十进制立即数寻址
+mov eax, ffffh //intel格式的16进制立即数寻址
+mov $0xffff, %eax //at&t格式的16进制立即数寻址
+base(offset, index, size) //at&t,其中base是立即数或者label，label表示label处的地址
+[base + offset + index*size] //intel
 
 ```
 

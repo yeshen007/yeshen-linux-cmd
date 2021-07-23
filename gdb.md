@@ -20,5 +20,32 @@ int main(int argc, char *argv[])
 `gcc -m32 -g hello.c -o hello`  
 `gdb ./hello`
 
+## info
 
+```c
 
+/* 可执行文件的简单信息 */
+info target
+
+/* 比info target更详细的信息 */
+maint info sections
+maint info sections .data .bss
+maint info sections ALLOC
+
+/* 查看函数地址 */
+info functions
+
+/* 查看变量 */
+info variables
+
+```
+
+## disassemble
+
+```c
+
+/*  */
+disassemble main
+disassemble /s main
+
+```

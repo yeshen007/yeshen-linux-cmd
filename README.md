@@ -325,6 +325,18 @@ head -c 5 file //显示文件file开头5个字节
 
 ### objdump
 
+```c
+/* 显示执行节如.text */
+objdump -d elf-file
+/* 显示所有节如.text .data */
+objdump -D elf-file
+/* 显示原码，但首席需要-g编译 */
+objdump -S elf-file
+/* 用intel的i386或者x86-64格式输出 */
+objdump -M i386,intel/x86-64,intel -D/-d elf-file
+
+```
+
 ### objcopy
 
 ### od

@@ -342,6 +342,8 @@ objdump -D elf-file
 objdump -S elf-file
 /* 用intel的i386或者x86-64格式输出 */
 objdump -M i386,intel/x86-64,intel -D/-d elf-file
+/* 显示特定节如.data,-z表示显示0 */
+objdump -z -d test -j .data
 
 ```
 
@@ -389,6 +391,9 @@ readelf -S elffile
 readelf -s elffile
 /* 重定位条目 */
 readelf -r elffile
+/* 特定节 */
+readelf -x .data elffie
+readelf -x 2 elffile
 
 ```
 

@@ -72,6 +72,11 @@ mov eax, [label]  //将label处的内容读到eax
 mov $label, %eax  //将label处的地址读到eax
 mov label, %eax   //将label处的内容读到eax
 
+# PTR
+WORD PTR [ax] //ax的值作为地址存放的一个字
+WORD PTR label //label处存放的一个字
+WORD PTR label + 2  //label接下来的第二个字节地址处存放的一个字
+
 ```
 
 

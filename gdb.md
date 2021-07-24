@@ -44,8 +44,8 @@ info variables
 
 ```c
 
-/*  */
+/* 反汇编函数 */
 disassemble main
-disassemble /s main
+disassemble /s main   //显示源代码
 
 ```

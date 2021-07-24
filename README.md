@@ -85,6 +85,10 @@ mov $0xffff, %eax //at&t格式的16进制立即数寻址
 base(offset, index, size) //at&t,其中base是立即数或者label，label表示label处的地址
 [base + offset + index*size] //intel
 
+/* 内联汇编 */
+修改列表中的memory表示内联代码要修改内存，因此在这段代码前将其他缓存了内存内容的高速缓存刷回内存。
+
+
 ```
 
 

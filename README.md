@@ -82,7 +82,7 @@ mov eax, 8 //intel格式的十进制立即数寻址
 mov $8, %eax //at&t格式的十进制立即数寻址
 mov eax, ffffh //intel格式的16进制立即数寻址
 mov $0xffff, %eax //at&t格式的16进制立即数寻址
-base(offset, index, size) //at&t,其中base是立即数或者label，label表示label处的地址
+base(offset, index, size) //at&t,其中base是立即数或者label，label表示label处的地址,base和size中的常数不带$
 [base + offset + index*size] //intel
 
 /* 内联汇编 */

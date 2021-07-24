@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
 ```c
 /* 显示所有寄存器的值 */
 info all
+/* 显示常用寄存器 */
+info register
 
 /* 可执行文件的简单信息 */
 info target
@@ -69,17 +71,19 @@ x/10d addr-label  //decimal
 x/10o addr-label  //octal
 x/10i addr-label  //显示addr处的10个指令
 x/s addr-label  //string
+x/i $eip  //显示寄存器的值作为地址的内容
 ```
 
 ## print/p
 
-`显示指定寄存器的内容或者获取label处的地址`
+`显示指定寄存器或变量的内容或者获取label处的地址`
 
 ```c
 print/x $eax
 print/t $eax  //二进制
 print/d $eax
 print label //显示label处的地址
+print variable //显示变量的值
 
 ```
 
@@ -98,6 +102,11 @@ b file:label
 
 `跳过函数的单步执行`
 
-```c
+## step/s
 
-```
+`陷入函数的单步执行`
+
+## bt
+
+
+

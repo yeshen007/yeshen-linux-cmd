@@ -274,9 +274,9 @@ patch -R -p1 < ../a-patch  //补丁在a同级目录，patch命令在a目录中
 /* 预处理 */
 gcc -E HelloWorld.c -o HelloWorld.i
 /* 编译 */
-gcc -S HelloWorld.i -o HelloWorld.s
+gcc -S HelloWorld.i -o HelloWorld.S
 /* 汇编 */
-gcc -c HelloWorld.s -o HelloWorld.o 或者 as hello.s -o hello.o
+gcc -c HelloWorld.S -o HelloWorld.o 或者 as hello.S -o hello.o
 /* 链接 */
 gcc -static -o myproc main.o test.o 或者 ld -static -o myproc main.o test.o
 /* 默认动态链接，如果没有动态库则静态链接 */

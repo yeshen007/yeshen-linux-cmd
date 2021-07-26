@@ -73,5 +73,8 @@
 ## git merge
 
     git merge <branch>      //在当前分支创建一个合并<branch>的提交，head指向它，但同时当前分支会多出<branch>分支的其他提交，按时间穿插
-    
+    /* 如果合并冲突则修改文件保存后执行以下指令 */
+    git add <file>
+    git merge --continue
+   
 ## git rebase

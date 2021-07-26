@@ -72,6 +72,6 @@
 
 ## git merge
 
-    git merge <branch>      //把当前分支和<branch>分支合并
+    git merge <branch>      //在当前分支创建一个合并<branch>的提交，head指向它
     
 ## git rebase

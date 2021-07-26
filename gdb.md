@@ -31,6 +31,9 @@ info register
 /* 可执行文件的简单信息 */
 info target
 
+/* 显示断点信息 */
+info break
+
 /* 比info target更详细的信息 */
 maint info sections
 maint info sections .data .bss
@@ -108,5 +111,5 @@ b file:label
 
 ## bt
 
-
+`显示当前栈帧`
 

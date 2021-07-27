@@ -134,6 +134,10 @@ int main()
         "movl %[v2], %[v3]"
         : [v3]"=r"(data3)
         : [v1]"r"(data1),[v2]"r"(data2));
+        
+
+/* vim */
+
 
 ```
 

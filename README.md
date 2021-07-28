@@ -138,7 +138,9 @@ int main()
 
 /* vim */
 1.misc
-   
+  <ctrl r><ctrl w>  //在命令或查找模式下插入光标下的单词
+  <ctrl r><ctrl a>  //在命令或查找模式下插入光标下的广义单词
+  :write !sudo tee % > /dev/null  //用root用户权限将vim缓冲区写回文件
 
 2.ctags
   ctags -R .   //递归扫描当前目录和所有子目录生成索引文件

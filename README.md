@@ -141,14 +141,16 @@ int main()
   <ctrl r><ctrl w>  //在命令或查找模式下插入光标下的单词
   <ctrl r><ctrl a>  //在命令或查找模式下插入光标下的广义单词
   :write !sudo tee % > /dev/null  //用root用户权限将vim缓冲区写回文件
-
-2.ctags
+  :pwd //显示当前窗口的工作目录
+  :lcd //改变当前窗口的工作目录，不影响其他窗口
+  
+2.插件ctags
   ctags -R .   //递归扫描当前目录和所有子目录生成索引文件
      注：我的vimrc配置了修改文件会自动更新索引，因此只要第一次ctags -R .
   ctrl + ]    //跳转到函数或变量定义的地方
   ctrl + T    //返回跳转之前的地方
    
-3.cscope
+3.插件cscope
   cscope -Rbq   //递归扫描当前目录和所有子目录生成索引文件
      注：和ctags一样，我的vimrc配置了修改文件会自动更新索引，因此只要第一次cscope -Rbq
   :cs find s <symbol>   //f5  查找c语言符号<symbol>出现的地方  
@@ -157,7 +159,7 @@ int main()
   :cs find d <function> //查找function调用的函数
   :cs find g <symbol>  //和ctags中的 ctrl + ]一样，查找符号定义的地方
   
-4.nerdtree
+4.插件nerdtree
   B  //切换书签显示兰
   :Bookmark //将光标当前位置生成书签
   D //删除光标位置书签
@@ -168,6 +170,24 @@ int main()
   o //小写，和回车一样，打开文件，旧文件的缓冲区被覆盖，光标跳转到新打开文件的缓冲区
   i //在新窗口打开文件，不覆盖旧文件缓冲区，光标跳转到打开文件的缓冲区
   go和gi //光标不跳转到打开的文件缓冲区的o和i版
+  
+5.标签tab
+  :tabnew                 //创建新tab
+  :tabnext/:tab        //切换到下一个标签
+  gt              //切换到下一个标签
+  :tabprevious/:tabp        //切换到上一个标签
+  gT            //切换到上一个标签
+  :tabmove n/:tabm n  //将当前标签移动到第n个标签之后
+  :tabclose/:tabc   //关闭当前标签和它的窗口，如果是最后一个标签页则不行
+  
+6.窗口window
+  :sp       //在当前活动窗口的上方创建一个窗口，导入当前活动窗口的文件缓冲区
+  :sp file  //在当前活动窗口的上方创建一个窗口，导入文件file的缓冲区
+  :vsp      //在左边
+  :q/<ctrl w><q>        //关闭当前窗口
+  <ctrl w><H>/<J>/<K>/<L>      //将当前窗口移动到最左，最下，最上，最右
+  <ctrl w><r>/<x>       //调换窗口的内容
+  
   
   
 

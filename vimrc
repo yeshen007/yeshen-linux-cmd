@@ -63,7 +63,7 @@ autocmd BufWritePost *.S *.c *.h silent! !ctags -R &
 "tagbar 
 let g:tarbar_width=25
 "autocmd BufReadPost *.cpp,*.c,*.h,*.cc,*.cxx,*.S call tagbar#autoopen()
-noremap <leader>tb :TagbarToggle<cr>
+noremap <leader>t :TagbarToggle<cr>	"有点慢
 
 "vim-gutentags
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']

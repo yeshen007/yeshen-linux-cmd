@@ -1,5 +1,6 @@
 
-#彭东 @ 2021.01.09
+##没有递归的模板
+##来自彭东
 
 #执行make时,默认第一个目标all,此时all按次序依次依赖clean build link bin,
 #分别代表先清洗残留污垢，编译，连接，二进制转换。
@@ -60,3 +61,8 @@ $(HELLOOS_BIN): $(HELLOOS_ELF)
         $(ASM) $(ASMBFLAGS) -o $@ $<
 %.o : %.c
         $(CC) $(CFLAGS) -o $@ $<
+
+
+
+##有递归的模板
+##来自韦东山

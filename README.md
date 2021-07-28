@@ -151,11 +151,11 @@ int main()
 3.cscope
   cscope -Rbq   //递归扫描当前目录和所有子目录生成索引文件
      注：和ctags一样，我的vimrc配置了修改文件会自动更新索引，因此只要第一次cscope -Rbq
-  cs find s <symbol>   //f5  查找c语言符号<symbol>出现的地方  
-  cs find t <text>    //f6   查找任何形式的字符串<text>出现的地方
-  cs find c <function>  //f7   查找调佣function的函数
-  cs find d <function> //查找function调用的函数
-  cs find g <symbol>  //和ctags中的 ctrl + ]一样，查找符号定义的地方
+  :cs find s <symbol>   //f5  查找c语言符号<symbol>出现的地方  
+  :cs find t <text>    //f6   查找任何形式的字符串<text>出现的地方
+  :cs find c <function>  //f7   查找调佣function的函数
+  :cs find d <function> //查找function调用的函数
+  :cs find g <symbol>  //和ctags中的 ctrl + ]一样，查找符号定义的地方
   
 4.nerdtree
   B  //切换书签显示兰

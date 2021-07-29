@@ -143,6 +143,9 @@ int main()
   :write !sudo tee % > /dev/null  //用root用户权限将vim缓冲区写回文件
   :pwd //显示当前窗口的工作目录
   :lcd //改变当前窗口的工作目录，不影响其他窗口
+  插件安装方法：
+    1) 创建一个存储插件的目录 mkdir -p ~/.vim/pack/plugins/start
+    2) 
   
 2.插件ctags
   ctags -R .   //递归扫描当前目录和所有子目录生成索引文件

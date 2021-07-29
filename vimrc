@@ -1,6 +1,6 @@
-let mapleader = "\<space>" 
-packloadall
-silent! helptags ALL
+let mapleader = "\<space>" 	"设置空格键为mapleader键	
+packloadall			"加载所有插件		
+silent! helptags ALL		"加载插件的帮助文档
 set foldmethod=indent
 set nocompatible
 filetype plugin on

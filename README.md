@@ -143,6 +143,8 @@ int main()
   :write !sudo tee % > /dev/null  //用root用户权限将vim缓冲区写回文件
   :pwd //显示当前窗口的工作目录
   :lcd //改变当前窗口的工作目录，不影响其他窗口
+  :h <插件名字>   //查看插件的用法
+  <ctrl o><cmd>   //在插入模式中输入普通模式的cmd命令然后继续插入模式
   手工插件安装方法：
     1) 创建一个存储插件的目录 mkdir -p ~/.vim/pack/plugins/start
     2) 配置好vimrc中的packloadall和silent! helptags ALL实现启动vim时加载插件和插件帮助文档
@@ -182,7 +184,11 @@ int main()
   go和gi //光标不跳转到打开的文件缓冲区的o和i版
   
 5.插件unimpaired
-  
+  ]a/[a   //下一个参数，上一个参数
+  ]b/[b   //下一个缓冲区，上一个缓冲区
+  ]t/[t   //下一个标签，上一个标签
+  ]q/[q   //下一个修复列表项，上一个修复列表项
+  ]l/[l   //下一个位置列表项，上一个位置列表项
 
 6.插件fzf fzf.vim ctrlp
   fzf和fzf.vim傻傻分不清，当成一个，不建议用ctrlp
@@ -218,6 +224,17 @@ int main()
   :vert res .. //宽度
 
 10.缓冲区buffer
+  :b n    
+  :b file-name 
+  :bd n
+  :bd file-name
+  :bd       //和以上两条不同，不会退出当前窗口
+  
+11.参数列表args
+
+12.位置列表list
+
+13.快速修复列表quickfix
   
 
 ```

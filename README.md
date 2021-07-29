@@ -145,7 +145,9 @@ int main()
   :lcd //改变当前窗口的工作目录，不影响其他窗口
   插件安装方法：
     1) 创建一个存储插件的目录 mkdir -p ~/.vim/pack/plugins/start
-    2) 
+    2) 配置好vimrc中的packloadall和silent! helptags ALL实现启动vim时加载插件和插件帮助文档
+    3) 将插件下载到插件目录后重启vim即可，如
+        git clone https://github.com/yeshen007/yeshen-linux-cmd.git ~/.vim/pack/plugins/start/yeshen-linux-cmd
   
 2.插件ctags
   ctags -R .   //递归扫描当前目录和所有子目录生成索引文件

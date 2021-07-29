@@ -105,5 +105,10 @@ Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 "手工安装到~./vim/pack/plugins/start中的插件
-" 
+" fzf--https://github.com.cnpmjs.org/junegunn/fzf.git
+" fzf.vim--https://github.com.cnpmjs.org/junegunn/fzf.vim.git
+" tagbar--https://github.com.cnpmjs.org/preservim/tagbar.git
+" vim-gutentags--https://github.com.cnpmjs.org/ludovicchabant/vim-gutentags.git
+" vim-vinegar--https://github.com.cnpmjs.org/tpope/vim-vinegar.git
+" YouCompleteMe--https://github.com/Valloric/YouCompleteMe.git
 

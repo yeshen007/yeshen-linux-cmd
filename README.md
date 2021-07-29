@@ -149,7 +149,9 @@ int main()
     3) 将插件下载到插件目录后重启vim即可，如
         git clone https://github.com/yeshen007/yeshen-linux-cmd.git ~/.vim/pack/plugins/start/yeshen-linux-cmd
   管理器插件安装方法：
-    1) 
+    1) 在https://github.com/junegunn/vim-plug下载vim.plug到~/.vim/autoload下。
+    2) 修改vimrc加入call plug#begin()和call plug#end()，在里面加入插件。
+    3) 重启vim或者source $MYVIMRC后执行:PlugInstall来安装插件，:PlugUpdate更新已安装插件，:PlugClean删除vimrc中移除的插件。
   
   
 2.插件ctags

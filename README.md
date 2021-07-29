@@ -370,6 +370,24 @@ cut -d: -f 3 file
 
 ### curl
 
+```c
+/* 下载文件 */
+curl -O http://man.linuxde.net/text.iso                    //O大写，不用O只是打印内容不会下载
+
+/* 下载文件并重命名 */
+curl -o rename.iso http://man.linuxde.net/text.iso         //o小写
+
+/* 断点续传 */
+curl -O -C - http://man.linuxde.net/text.iso               //O大写，C大写
+
+/* 限速下载 */
+curl --limit-rate 50k -O http://man.linuxde.net/text.iso
+
+/* 显示响应头部信息 */
+curl -I http://man.linuxde.net/text.iso
+
+```
+
 
 ## D
 
@@ -604,3 +622,23 @@ readelf -x 2 elffile
 
 ### wget
 
+```c
+/* 下载文件 */
+wget http://www.linuxde.net/text.iso
+
+/* 下载文件并重命名 */
+wget -O rename.zip http://www.linuxde.net/text.iso         //O大写
+
+/* 断点续传 */
+wget -c http://www.linuxde.net/text.iso                    //c小写
+
+/* 限速下载 */
+wget --limit-rate=50k http://www.linuxde.net/text.iso
+
+/* 显示响应头部信息 */
+wget --server-response http://www.linuxde.net/test.iso
+
+/* 打包下载网站 */
+wget --mirror -p --convert-links -P /var/www/html http://man.linuxde.net/
+
+```

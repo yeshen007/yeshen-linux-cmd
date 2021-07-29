@@ -155,7 +155,14 @@ int main()
     1) 在https://github.com/junegunn/vim-plug下载vim.plug到~/.vim/autoload下。
     2) 修改vimrc加入call plug#begin()和call plug#end()，在里面加入插件。
     3) 重启vim或者source $MYVIMRC后执行:PlugInstall来安装插件，:PlugUpdate更新已安装插件，:PlugClean删除vimrc中移除的插件。
-  
+  map和noremap：
+    1) map--递归映射，cmd1会映射到cmd3
+     map cmd1 cmd2
+     map/noremap cmd2 cmd3
+    2) noremap--非递归映射,cmd1映射到cmd2就停了，无论cmd2后来是否有映射和是否递归映射
+     noremap cmd1 cmd2
+     map/noremap cmd2 cmd3
+      
   
 2.插件ctags
   ctags -R .   //递归扫描当前目录和所有子目录生成索引文件

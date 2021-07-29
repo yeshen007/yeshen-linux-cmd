@@ -94,16 +94,16 @@ nmap <silent> <F6> :cs find t <C-R>=expand("<cword>")<CR><CR>
 nmap <silent> <F7> :cs find c <C-R>=expand("<cword>")<CR><CR>
 
 
-"使用vim-plug管理插件
+"使用vim-plug管理插件,执行:PlugInstall后会安装到~./vim/plugged中，并且会自动加载
 call plug#begin()
 
 Plug 'tpope/vim-unimpaired' 
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
-"Plug 'majutsushi/tagbar'
-Plug 'sjl/gundo.vim'
-
 
 call plug#end()
+
+"手工安装到~./vim/pack/plugins/start中的插件
+" 
 

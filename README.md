@@ -145,6 +145,7 @@ int main()
   :lcd //改变当前窗口的工作目录，不影响其他窗口
   :h <插件名字>   //查看插件的用法
   <ctrl o><cmd>   //在插入模式中输入普通模式的cmd命令然后继续插入模式
+  :vimgrep "text" **/*    //在当前vim的工作目录查找text
   手工插件安装方法：
     1) 创建一个存储插件的目录 mkdir -p ~/.vim/pack/plugins/start
     2) 配置好vimrc中的packloadall和silent! helptags ALL实现启动vim时加载插件和插件帮助文档
@@ -235,6 +236,7 @@ int main()
   
 
 12.位置列表list
+
 
 13.快速修复列表quickfix
   

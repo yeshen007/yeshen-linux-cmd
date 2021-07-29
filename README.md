@@ -161,8 +161,7 @@ int main()
      map/noremap cmd2 cmd3
     2) noremap--非递归映射,cmd1映射到cmd2就停了，无论cmd2后来是否有映射和是否递归映射
      noremap cmd1 cmd2
-     map/noremap cmd2 cmd3
-      
+     map/noremap cmd2 cmd3     
   
 2.插件ctags
   ctags -R .   //递归扫描当前目录和所有子目录生成索引文件
@@ -240,7 +239,10 @@ int main()
   :bd       //和以上两条不同，不会退出当前窗口
   
 11.参数列表args
-  
+  :args  //显示参数列表
+  :arg <files>  //重新定义参数列表
+  :argadd <file>  //在原来的参数列表中添加file
+  :argdo <cmd> | write   //对参数列表每个文件缓冲区执行指令cmd和write
 
 12.位置列表list
 
@@ -365,6 +367,8 @@ cut -b/-c 3 file
 cut -b/-c 2-4,8 file
 cut -d: -f 3 file
 ```
+
+### curl
 
 
 ## D
@@ -597,4 +601,6 @@ readelf -x 2 elffile
 ## W
 
 ### wc
+
+### wget
 

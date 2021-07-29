@@ -181,7 +181,17 @@ int main()
   i //在新窗口打开文件，不覆盖旧文件缓冲区，光标跳转到打开文件的缓冲区
   go和gi //光标不跳转到打开的文件缓冲区的o和i版
   
-5.标签tab
+5.插件unimpaired
+  
+
+6.插件fzf fzf.vim ctrlp
+  fzf和fzf.vim傻傻分不清，当成一个，不建议用ctrlp
+  <space><f>    //开启模糊搜索文件功能
+  
+7.插件easymotion
+  <space><h/j/k/l/w/b/e>
+  
+8.标签tab
   :tabnew                 //创建新tab
   :tabnext/:tab        //切换到下一个标签
   gt              //切换到下一个标签
@@ -190,7 +200,7 @@ int main()
   :tabmove n/:tabm n  //将当前标签移动到第n个标签之后
   :tabclose/:tabc   //关闭当前标签和它的窗口，如果是最后一个标签页则不行
   
-6.窗口window
+9.窗口window
   :sp       //在当前活动窗口的上方创建一个窗口，导入当前活动窗口的文件缓冲区
   :sp file  //在当前活动窗口的上方创建一个窗口，导入文件file的缓冲区
   :vsp      //在左边
@@ -207,7 +217,7 @@ int main()
   :res n    //当前窗口高度就设为n行
   :vert res .. //宽度
 
-7.缓冲区buffer
+10.缓冲区buffer
   
 
 ```

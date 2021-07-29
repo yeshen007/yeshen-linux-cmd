@@ -1,13 +1,13 @@
 let mapleader = "\<space>" 	"设置空格键为mapleader键	
 packloadall			"加载所有插件		
 silent! helptags ALL		"加载插件的帮助文档
-set foldmethod=indent
-set nocompatible
-filetype plugin on
-let NERDTreeHijackNetrw = 0
+set foldmethod=indent		"基于缩进折叠代码
+set nocompatible		"使用vim的高级功能，建议开启，不然就是vi
+filetype plugin on		"识别文件类型
+let NERDTreeHijackNetrw = 0	
 set nu
-"set hls
-set incsearch
+"set hls			
+set incsearch			
 syntax on
 set history=100
 set autoindent	"开始新行时自动处理缩进
@@ -31,7 +31,7 @@ noremap <c-k> <c-w><c-k>
 noremap <c-l> <c-w><c-l>
 
 "nerdtree
-noremap <leader>n :NERDTreeToggle<cr>
+noremap <leader>n :NERDTreeToggle<cr>	
 let NERDTreeShowBookmarks = 1     "启动nerdtree时显示书签
 autocmd VimEnter * NERDTree       "vim启动时打开nerdtree
 "当nerdtree是最后一个窗口时自动关闭
@@ -56,16 +56,16 @@ noremap <leader>f :FZF<cr>
 "gundo
 "noremap <leader>u :GundoToggle<cr>
 
-"ctags
+"ctags，设置更改源文件时自动更新
 set tags=tags;
 autocmd BufWritePost *.S *.c *.h silent! !ctags -R &
 
-"tagbar 
+"tagbar，设置读取以下源文件时自动打开tagbar 
 let g:tarbar_width=25
 "autocmd BufReadPost *.cpp,*.c,*.h,*.cc,*.cxx,*.S call tagbar#autoopen()
 noremap <leader>t :TagbarToggle<cr>	"有点慢
 
-"vim-gutentags
+"vim-gutentags，ctags自动更新相关
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']

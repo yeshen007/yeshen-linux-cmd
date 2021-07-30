@@ -528,6 +528,9 @@ nasm -f bin/elf test.asm -o test
 
 ### nm
 
+```c
+nm elf-file
+```
 
 ## O
 

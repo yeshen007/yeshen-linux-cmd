@@ -546,7 +546,10 @@ objdump -S elf-file
 /* 用intel的i386或者x86-64格式输出 */
 objdump -M i386,intel/x86-64,intel -D/-d elf-file
 /* 显示特定节如.data,-z表示显示0 */
-objdump -z -d test -j .data
+objdump -z -d elf-file -j .data
+/* 加上-x把elf文件的程序头表，节头表符号表等详细内容显示出来 */
+objdump -x elf-file
+objdump -x -d elf-file
 
 ```
 

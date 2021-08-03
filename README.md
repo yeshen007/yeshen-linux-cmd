@@ -55,6 +55,9 @@ exec
 1.push addr of next instruction
 2.make the pc point to the addr of the function being called
 
+# pc指针
+指向下一条指令，而arm32位的指向下下条
+
 # leave
 1.mov ebp esp
 2.pop ebp

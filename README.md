@@ -555,6 +555,19 @@ objdump -x -d elf-file
 
 ### objcopy
 
+`objcopy [选项]... 输入文件 [输出文件]`
+`将目标文件的一部分或者全部内容拷贝到另外一个目标文件中，或者实现目标文件的格式转换`
+`如果不指定目标文件那么 objcopy 将会创建一个临时文件，并且将其命名为源文件`
+
+```c
+/*
+ * -I format -- 指定输入文件的格式
+ * -O format -- 指定输出文件的格式
+ */
+objcopy -I elf32-little -O binary inputfile outputfile
+
+```
+
 ### od
 
 ```c

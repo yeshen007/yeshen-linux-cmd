@@ -494,7 +494,10 @@ head -c 5 file //显示文件file开头5个字节
 ### hd/hexdump
 
 ```c
+/* 普通用法 */
 hexdump file
+/* 好用，16进制和ascii一起显示 */
+hexdump -C file
 ```
 
 

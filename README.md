@@ -523,20 +523,20 @@ mkfs.ext4 floppy.img
 losetup -f
 
 /* step4 使用losetup将镜像文件虚拟成块设备 */
-sudo losetup /dev/loop21 floppy.img
+losetup /dev/loop21 floppy.img
 
 /* step5 挂载块设备到某个目录 */
-sudo mount /dev/loop21 /mnt/mydir
+mount /dev/loop21 /mnt/mydir
 
 /* step6 访问完设备后解除联系 */
-sudo umount /mnt/mydir
-sudo losetup -d /dev/loop21
+umount /mnt/mydir
+losetup -d /dev/loop21
 
-注1：step2可以在step3和step4后做，不过此时是 `mkfs.ext4 /dev/loop21`
+注1：step2可以在step3和step4后做，不过此时是 mkfs.ext4 /dev/loop21
 
-注2：step3.step4可以用一步 `losetup --find --show floppy.img` 替代
+注2：step3.step4可以用一步 losetup --find --show floppy.img 替代
 
-注3：step4.step5可以用一步 `mount -o loop loopfile.img /mnt/mydir` 替代
+注3：step4.step5可以用一步 mount -o loop loopfile.img /mnt/mydir 替代
 
 ```
 

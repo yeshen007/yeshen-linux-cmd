@@ -33,6 +33,9 @@ gateway 192.168.8.1
 /etc/group
 /etc/sudoers
 
+/* 自动挂载文件系统文件  */
+/etc/fstab
+
 
 /* 启动环境变量设置文件 */
 /etc/profile    //设定的变量能用于所有用户    
@@ -552,6 +555,12 @@ losetup -d /dev/loop21
 ### mkfs
 
 ### mount
+
+```c
+mount //和df类似，显示挂载的文件系统，但是可读性没有df好
+mount /dev/xxx mount-dir //将设备xxx挂载到mount-dir
+mount -o loop xxx.img mount-dir //用回环设备将xxx.img虚拟为块设备再挂载
+```
 
 
 ## N

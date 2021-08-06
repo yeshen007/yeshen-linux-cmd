@@ -478,6 +478,8 @@ gcc -S HelloWorld.i -o HelloWorld.S
 gcc -c HelloWorld.S -o HelloWorld.o 或者 as hello.S -o hello.o
 /* 链接 */
 gcc -static -o myproc main.o test.o 或者 ld -static -o myproc main.o test.o
+ld -m elf_i386 ...  //链接32位x86的
+
 /* 默认动态链接，如果没有动态库则静态链接 */
 gcc -o myproc main.o test.o 或者 ld -o myproc main.o test.o
 /* 一步处理预处理，编译，汇编，链接 */

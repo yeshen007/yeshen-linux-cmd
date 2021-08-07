@@ -687,6 +687,20 @@ readelf -x 2 elffile
 
 ### tar
 
+```c
+/* 压缩 */
+tar cvf filename.tar.gz xxx
+/* 压缩为tar.gz */
+tar czvf filename.tar.gz XXX
+/* 解压 */
+tar xvf filename.tar.gz -C dir
+/* 解压tar.gz */
+tar xzvf filename.tar.gz -C dir
+/* 解压tar.bz2 */
+tar xjvf filename.tar.bz2 -C dir
+
+```
+
 ### top
 
 ### tee

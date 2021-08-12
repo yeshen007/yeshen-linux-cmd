@@ -642,6 +642,20 @@ od -Ad -t c -j 5228 -N 499 main
 
 ## P
 
+### passwd
+
+```c
+/* 修改当前用户密码 */
+passwd
+
+/* 修改根用户密码 */
+sudo passwd
+
+/* 修改指定用户A的密码 */
+passwd yeshen
+
+```
+
 ### ps
 
 ### parted

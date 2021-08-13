@@ -72,7 +72,7 @@ $(HELLOOS_BIN): $(HELLOOS_ELF)
 
 
 ##内核模块makefile模板
-
+##来自altera
 
 #Name of the module
 obj-m := rd_f2sm_rand.o

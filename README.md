@@ -544,6 +544,17 @@ hexdump -C file
 
 ## L
 
+### ln
+
+```c
+/* 创建软链接 */
+ln -s source_file symbolic_link
+
+/* 创建硬链接 */
+ln source_file symbolic_link
+
+```
+
 ### ldd
 
 ### losetup

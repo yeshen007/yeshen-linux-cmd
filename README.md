@@ -520,6 +520,11 @@ gcc -m32 ...
 
 ### grep 
 
+```c
+/* 在当前目录和所有子目录中寻找文件中的string in file */
+grep "string in file" * -nR
+```
+
 ### gzip/gunzip
 
 

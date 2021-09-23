@@ -737,6 +737,17 @@ readelf -x 2 elffile
 
 ### strace
 
+```c
+/* 普通用法 */
+strace <program> <args>
+/* 追踪一个正在运行的进程 */
+strace -p <pid>
+/* 查看读入描述符3的数据 */
+strace -e read=3 <program> <args>
+/* 查看写入描述符3的数据 */
+strace -e write=3 <program> <args>
+```
+
 
 ## T
 

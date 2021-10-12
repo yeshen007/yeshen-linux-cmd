@@ -367,6 +367,7 @@ cat -b file
 ```c
 chown newuser file
 chown newuser.newgroup file
+chown newuser{.newgroup} file -R
 
 ```
 ### chgrp

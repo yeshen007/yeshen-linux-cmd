@@ -265,6 +265,12 @@ int main()
 13.快速修复列表quickfix
   /* 参考vim使用技巧248页技巧106 */
   
+  
+/* buildroot的工具链配置内核头文件版本 */  
+   arm-xilinx-linux-gnueabi/libc/usr/include/linux/version.h
+   #define LINUX_VERSION_CODE 196609
+   #define KERNEL_VERSION(a,b,c) (((a) << 16) + ((b) << 8) + (c))
+   196609版本的16进制是0x30001,那版本号就是3.00.01,就是3.0.1了,所以这里选3.0.x
 
 ```
 

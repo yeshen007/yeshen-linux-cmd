@@ -21,7 +21,7 @@
 
 ## git add 
 
-    git add <files>     //(stage)添加工作区的文件到暂存区
+    git add <files>/.     //(stage)添加工作区的文件到暂存区
 
 ## git commit
 
@@ -60,7 +60,7 @@
 
 ## git reset
 
-    git reset HEAD <file>   //(unstage)将HEAD指向的提交刷回暂存区
+    git reset HEAD <files>/.   //(unstage)将HEAD指向的提交刷回暂存区
     git reset --hard <comid>    //将HEAD移动到<comid>并且commid都刷到暂存区和工作区
     git reset --soft HEAD^3     //将HEAD移动到单个版本之前，不刷任何区
 
@@ -74,7 +74,7 @@
 
     git merge <branch>      //在当前分支创建一个合并<branch>的提交，head指向它，但同时当前分支会多出<branch>分支的其他提交，按时间穿插
     /* 如果合并冲突则修改文件保存后执行以下指令 */
-    git add <file>
+    git add <files>/.
     git merge --continue
    
 ## git rebase

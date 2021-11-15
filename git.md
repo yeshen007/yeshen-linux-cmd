@@ -55,13 +55,14 @@
     
 ## git checkout
 
-    git checkout <branch>   //HEAD切换到<branch>分支并刷到暂存区和工作区
+    git checkout <branch>   //HEAD切换到<branch>分支并刷到暂存区，没有刷到工作区
     git checkout -b <branch>    //创建一个<branch>分支并将HEAD移动到该新分支
 
 ## git reset
 
     git reset HEAD <files>/.   //(unstage)将HEAD指向的提交刷回暂存区
     git reset --hard <comid>    //将HEAD移动到<comid>并且commid都刷到暂存区和工作区
+    git reset --hard HEAD        //将HEAD指向的当前提交刷到暂存区和工作区    
     git reset --soft HEAD^3     //将HEAD移动到单个版本之前，不刷任何区
 
 ## git diff

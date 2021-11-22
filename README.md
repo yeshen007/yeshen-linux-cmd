@@ -435,6 +435,13 @@ deluser --remove-home <user>
 delgroup group //先删除组中的用户
 ```
 
+### devmem
+
+```c
+devmem <phyaddr> <bitwith>          //读物理地址phyaddr的位宽bitwith的值
+devmem <phyaddr> <bitwith> <value>  //写value的bitwith位到物理地址phyaddr
+```
+
 ### diff and patch
 
 ```c

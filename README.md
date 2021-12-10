@@ -785,6 +785,14 @@ tar xjvf filename.tar.bz2 -C dir
 
 ```
 
+### test
+
+```c
+man test 
+test someting等于脚本中的[something]
+test exp1 -a exp2等于[exp1] && [exp2]
+```
+
 ### top
 
 ### tee

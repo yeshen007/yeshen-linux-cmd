@@ -791,6 +791,7 @@ tar xjvf filename.tar.bz2 -C dir
 man test 
 test someting等于脚本中的[something]
 test exp1 -a exp2等于[exp1] && [exp2]
+test exp1 -o exp2等于[exp1] || [exp2]
 ```
 
 ### top

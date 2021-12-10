@@ -794,6 +794,10 @@ tar xjvf filename.tar.bz2 -C dir
 
 ### wc
 
+```c
+man wc //简单
+```
+
 ### wget
 
 ```c

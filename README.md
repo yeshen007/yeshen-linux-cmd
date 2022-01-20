@@ -796,6 +796,10 @@ test exp1 -o exp2等于[exp1] || [exp2]
 
 ### top
 
+```c
+按1显示每个cpu
+```
+
 ### tee
 
 

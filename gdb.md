@@ -9,16 +9,22 @@
 compile a program with -g, then start it with gdb:
 
 ```c
-/* hello.c */
+/* gdb-test.c */
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
-  printf("hello world\n");
-  return 0;
+        printf("gdb test begin\n");
+        int i;
+        int r = 0;
+        for (i = 0; i < 10; ) {
+                r = r + i;
+                i++;
+        }
+        printf("gdb test done\n");
 }
 ```
-`gcc -m32 -g hello.c -o hello`  
-`gdb ./hello`
+`gcc -m32 -g gdb-test.c -o gdb-test`  
+`gdb ./gdb-test`
 
 ## info
 

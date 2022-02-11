@@ -33,17 +33,23 @@
     git push <remoterespo> <localbranch>:<remotebranch>
 
 ## git pull
-    /* 从远程仓库拉取 */
+    /* 从远程仓库拉取并合并 */
     git pull <remoterespo> <remotebranch>:<localbranch>
     
 ## git fetch
-
+    /* 从远程仓库拉取但不合并 */
+    git fetch <remoterespo> <remotebranch>:<localbranch>
 
 ## git remote
 
     git remote -v   //显示远程仓库地址和别名
     git remote show <shortname>     //显示本地仓库和远程仓库的同步情况
     git remote add <shortname> <wholeaddr>      //增加远程仓库别名
+    
+## git tag
+    
+    git tag -l //显示所有标签列表
+    git tag tag1 HEAD~  //为当前分支的当前节点的前一节点创建标签tag1
     
 ## git branch
 
@@ -52,7 +58,8 @@
     git branch -a   //显示本地和远程分支
     git branch <newbranch>  //创建分支
     git branch -d <branch>  //删除分支
-    
+    git branch <branch> <tag>  //在当前分支的<tag>节点处创建分支<branch>
+     
 ## git checkout
 
     git checkout <branch>   //HEAD切换到<branch>分支并刷到暂存区，没有刷到工作区
@@ -80,3 +87,6 @@
     git merge --continue
    
 ## git rebase
+
+    git rebase <branch>  //将当前分支的基变到<branch>的最新提交节点上
+    

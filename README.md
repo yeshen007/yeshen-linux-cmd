@@ -219,7 +219,7 @@ int main()
   
 8.标签tab
   :tabnew                 //创建新tab
-  :tabnext/:tab        //切换到下一个标签
+  :tabnext/:tabn        //切换到下一个标签
   gt              //切换到下一个标签
   :tabprevious/:tabp        //切换到上一个标签
   gT            //切换到上一个标签

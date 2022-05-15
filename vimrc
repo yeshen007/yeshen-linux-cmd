@@ -33,13 +33,13 @@ noremap <c-l> <c-w><c-l>
 "nerdtree
 noremap <leader>n :NERDTreeToggle<cr>	
 let NERDTreeShowBookmarks = 1     "启动nerdtree时显示书签
-autocmd VimEnter * NERDTree       "vim启动时打开nerdtree
+"autocmd VimEnter * NERDTree       "vim启动时打开nerdtree
 "当nerdtree是最后一个窗口时自动关闭
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") &&
   \ b:NERDTree.isTabTree()) | q | endif
 
 "quickfix
-autocmd VimEnter *  :copen  "vim启动时自动打开quickfix
+"autocmd VimEnter *  :copen  "vim启动时自动打开quickfix
 noremap <leader>o :copen<cr>
 noremap <leader>c :cclose<cr>
 
@@ -60,9 +60,9 @@ noremap <leader>f :FZF<cr>
 set tags=tags;
 autocmd BufWritePost *.S *.c *.h silent! !ctags -R &
 
-"tagbar，设置读取以下源文件时自动打开tagbar 
+"tagbar
 let g:tarbar_width=25
-"autocmd BufReadPost *.cpp,*.c,*.h,*.cc,*.cxx,*.S call tagbar#autoopen()
+"autocmd BufReadPost *.cpp,*.c,*.h,*.cc,*.cxx,*.S call tagbar#autoopen() "读取这些源文件时自动打开tagbar
 noremap <leader>t :TagbarToggle<cr>	"有点慢
 
 "vim-gutentags，ctags自动更新相关
@@ -95,20 +95,21 @@ nmap <silent> <F7> :cs find c <C-R>=expand("<cword>")<CR><CR>
 
 
 "使用vim-plug管理插件,执行:PlugInstall后会安装到~./vim/plugged中，并且会自动加载
-call plug#begin()
+"call plug#begin()
 
-Plug 'tpope/vim-unimpaired' 
-Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'easymotion/vim-easymotion'
+"Plug 'preservim/nerdtree' 
 
-call plug#end()
+"call plug#end()
 
-"手工安装到~./vim/pack/plugins/start中的插件
-" fzf--https://github.com.cnpmjs.org/junegunn/fzf.git
-" fzf.vim--https://github.com.cnpmjs.org/junegunn/fzf.vim.git
-" tagbar--https://github.com.cnpmjs.org/preservim/tagbar.git
-" vim-gutentags--https://github.com.cnpmjs.org/ludovicchabant/vim-gutentags.git
-" vim-vinegar--https://github.com.cnpmjs.org/tpope/vim-vinegar.git
+"手工安装插件到~./vim/pack/plugins/start
+" nerdtree--https://github.com/preservim/nerdtree
+" vim-unimpaired--https://github.com/tpope/vim-unimpaired
+" ctrlp.vim--https://github.com/ctrlpvim/ctrlp.vim
+" vim-easymotion--https://github.com/easymotion/vim-easymotion
+" fzf--https://github.com/junegunn/fzf.git
+" fzf.vim--https://github.com/junegunn/fzf.vim.git
+" tagbar--https://github.com/preservim/tagbar.git
+" vim-gutentags--https://github.com/ludovicchabant/vim-gutentags.git
+" vim-vinegar--https://github.com/tpope/vim-vinegar.git
 " YouCompleteMe--https://github.com/Valloric/YouCompleteMe.git
 

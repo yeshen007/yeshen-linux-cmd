@@ -102,14 +102,39 @@ nmap <silent> <F7> :cs find c <C-R>=expand("<cword>")<CR><CR>
 "call plug#end()
 
 "手工安装插件到~./vim/pack/plugins/start
-" nerdtree--https://github.com/preservim/nerdtree
-" vim-unimpaired--https://github.com/tpope/vim-unimpaired
-" ctrlp.vim--https://github.com/ctrlpvim/ctrlp.vim
-" vim-easymotion--https://github.com/easymotion/vim-easymotion
-" fzf--https://github.com/junegunn/fzf.git
-" fzf.vim--https://github.com/junegunn/fzf.vim.git
-" tagbar--https://github.com/preservim/tagbar.git
-" vim-gutentags--https://github.com/ludovicchabant/vim-gutentags.git
-" vim-vinegar--https://github.com/tpope/vim-vinegar.git
-" YouCompleteMe--https://github.com/Valloric/YouCompleteMe.git
+" nerdtree -- https://github.com/preservim/nerdtree
+" vim-unimpaired -- https://github.com/tpope/vim-unimpaired
+" ctrlp.vim -- https://github.com/ctrlpvim/ctrlp.vim
+" vim-easymotion -- https://github.com/easymotion/vim-easymotion
+" fzf -- https://github.com/junegunn/fzf.git
+" fzf.vim -- https://github.com/junegunn/fzf.vim.git
+" tagbar -- https://github.com/preservim/tagbar.git
+" vim-gutentags -- https://github.com/ludovicchabant/vim-gutentags.git
+" vim-vinegar -- https://github.com/tpope/vim-vinegar.git
+" YouCompleteMe -- https://github.com/Valloric/YouCompleteMe.git
+    "1. 升级vim到8.1以上
+        "sudo add-apt-repository ppa:jonathonf/vim
+        "sudo apt-get update
+        "sudo apt-get install vim
+    "2. 升级c++17
+        "sudo apt-get install g++-8
+        "sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 \
+        "700 --slave /usr/bin/g++ g++ /usr/bin/g++-7
+        "sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 \
+        "800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
+    "3. 升级cmake
+        "sudo apt-get autoremove cmake
+        "cd ~/Downloads
+        "wget https://github.com/Kitware/CMake/releases/download/v3.16.0/cmake-3.16.0.tar.gz
+        "tar -zxvf cmake-3.16.0.tar.gz
+        "cd cmake-3.16.0
+        "apt install libssl-dev build-essential
+        "./bootstrap && make && sudo make install
+    "4. 安装YouCompleteMe
+        "cd ~/.vim/pack/plugins/start/YouCompleteMe
+        "git submodule update --init --recursive
+        "python3 install.py --clangd-completer
 
+"有两个插件用apt安装
+"ctags -- sudo apt-get install ctags
+"cscope -- sudo apt-get install cscope

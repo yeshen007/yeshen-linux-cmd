@@ -322,7 +322,7 @@ awk '{print "hello world!"}' awk.txt
 /* 分隔符默认是任意空白字符，除非用-Fx来将x指定为分隔符 */
 awk -F: '{print $1,$2}' awk.txt 
 
-/* 多个分隔符 */
+/* 多个分隔符 */ 
 awk -F '[:, ]'  '{print $1,$2,$3}'   awk.txt
 
 /* 多条命令 */
@@ -562,6 +562,10 @@ head -c 5 file //显示文件file开头5个字节
 hexdump file
 /* 好用，16进制和ascii一起显示 */
 hexdump -C file
+/* 显示num字节 */
+hexdump -n <num> file
+/* 跳过num字节显示 */
+hexdump -s <num> file
 ```
 
 

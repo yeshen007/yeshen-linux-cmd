@@ -63,7 +63,7 @@
 ## git checkout
 
     git checkout <branch>   //HEAD切换到<branch>分支并刷到暂存区，没有刷到工作区
-    git checkout -b <branch>    //创建一个<branch>分支并将HEAD移动到该新分支
+    git checkout -b <branch>    //创建一个<branch>分支并将HEAD移动到该新分支,刷到暂存区和工作区
     git checkout -- <files>/.   //将暂存区刷到工作区
 
 ## git reset

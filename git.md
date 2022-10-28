@@ -62,7 +62,8 @@
      
 ## git checkout
 
-    git checkout <branch>   //HEAD切换到<branch>分支并刷到暂存区，没有刷到工作区
+    git checkout <branch>       //切换到<branch>分支并刷到暂存区和工作区（需要暂存区和工作区都和当前版本一致）
+    git checkout -f <branch>    //强制切换到<branch>分支并刷到暂存区和工作区，暂存区和工作区会被新分支的最新版本强制覆盖
     git checkout -b <branch>    //创建一个<branch>分支并将HEAD移动到该新分支,刷到暂存区和工作区
     git checkout -- <files>/.   //将暂存区刷到工作区
 

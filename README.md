@@ -222,7 +222,7 @@ int main()
   gcap  //注释当前段
   gcG   //注释当前行到文件末尾
   
-8.标签tab
+9.标签tab
   :tabnew                 //创建新tab
   :tabnext/:tabn        //切换到下一个标签
   gt              //切换到下一个标签
@@ -231,7 +231,7 @@ int main()
   :tabmove n/:tabm n  //将当前标签移动到第n个标签之后
   :tabclose/:tabc   //关闭当前标签和它的窗口，如果是最后一个标签页则不行
   
-9.窗口window
+10.窗口window
   :sp       //在当前活动窗口的上方创建一个窗口，导入当前活动窗口的文件缓冲区
   :sp file  //在当前活动窗口的上方创建一个窗口，导入文件file的缓冲区
   :vsp      //在左边
@@ -248,26 +248,26 @@ int main()
   :res n    //当前窗口高度就设为n行
   :vert res .. //宽度
 
-10.缓冲区buffer
+11.缓冲区buffer
   :b n    
   :b file-name 
   :bd n
   :bd file-name
   :bd       //和以上两条不同，不会退出当前窗口
   
-11.参数列表args
+12.参数列表args
   :args  //显示参数列表
   :arg <files>  //重新定义参数列表
   :argadd <file>  //在原来的参数列表中添加file
   :argdo <cmd> | write   //对参数列表每个文件缓冲区执行指令cmd和write
 
-12.位置列表list
+13.位置列表list
   /* 对于每个会产生quickfix条目的命令都会有加上一个l前缀的局部命令。
    * 每个窗口一个位置列表，以下命令都只操作当前窗口的位置列表。
    * 命令和quickfix的操作一样，把c换成l
    */
 
-13.快速修复列表quickfix
+14.快速修复列表quickfix
   /* 参考vim使用技巧248页技巧106 */
   
   

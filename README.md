@@ -217,6 +217,11 @@ int main()
 7.插件easymotion
   <space><h/j/k/l/w/b/e>
   
+8.插件vim-commentart
+  gcc //注释当前行
+  gcap  //注释当前段
+  gcG   //注释当前行到文件末尾
+  
 8.标签tab
   :tabnew                 //创建新tab
   :tabnext/:tabn        //切换到下一个标签

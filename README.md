@@ -152,6 +152,8 @@ int main()
 1.misc
   <ctrl r><ctrl w>  //在命令或查找模式下插入光标下的单词
   <ctrl r><ctrl a>  //在命令或查找模式下插入光标下的广义单词
+  <ctrl i>和<ctrl o> //跳转前进和后退
+  <ctrl r>和u        //修改前进和后退
   :write !sudo tee % > /dev/null  //用root用户权限将vim缓冲区写回文件
   :pwd //显示当前窗口的工作目录
   :lcd //改变当前窗口的工作目录，不影响其他窗口

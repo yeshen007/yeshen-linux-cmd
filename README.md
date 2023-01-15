@@ -214,7 +214,7 @@ int main()
   <space><f>    //开启模糊搜索文件功能
   
 7.插件easymotion
-  <space><h/j/k/l/w/b/e>
+  <space><space><h/j/k/l/w/b/e/f>
   
 8.插件vim-commentart
   gcc //注释当前行
